@@ -16,7 +16,7 @@ function App() {
   const login = async () => {
     try {
       const res = await axios.post(
-        "http://https://employee-todo-system-mern.onrender.com/api/auth/login",
+        "https://employee-todo-system-mern.onrender.com/api/auth/login",
         {
           email,
           password,
@@ -43,7 +43,7 @@ function App() {
   const getTodos = async () => {
     try {
       const res = await axios.get(
-        "http://https://employee-todo-system-mern.onrender.com/api/todos",
+        "https://employee-todo-system-mern.onrender.com/api/todos",
         {
           headers: {
             Authorization: token,
@@ -60,7 +60,7 @@ function App() {
   const createTodo = async () => {
     try {
       await axios.post(
-        "http://https://employee-todo-system-mern.onrender.com/api/todos",
+        "https://employee-todo-system-mern.onrender.com/api/todos",
         {
           title,
           description,
@@ -89,7 +89,7 @@ function App() {
   const markComplete = async (id) => {
     try {
       await axios.put(
-        `http://https://employee-todo-system-mern.onrender.com/api/todos/${id}`,
+        `https://employee-todo-system-mern.onrender.com/api/todos/${id}`,
         {
           status: "Completed",
         },
@@ -111,7 +111,7 @@ function App() {
   const deleteTodo = async (id) => {
     try {
       await axios.delete(
-        `http://https://employee-todo-system-mern.onrender.com/api/todos/${id}`,
+        `https://employee-todo-system-mern.onrender.com/api/todos/${id}`,
         {
           headers: {
             Authorization: token,
